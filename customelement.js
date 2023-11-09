@@ -29,3 +29,20 @@ class TurquoiseElement extends HTMLElement{
 }
 
 customElements.define("x-turquoise", TurquoiseElement);
+
+
+class PaleVioletRedElement extends HTMLElement{
+    connectedCallback(){        
+        this.innerHTML  = `<div style="color:palevioletred">${this.innerHTML}</div>`;
+    }
+}
+
+customElements.define("x-palevioletred", PaleVioletRedElement);
+
+class ParagraphElement extends HTMLElement{
+    connectedCallback(){        
+        this.innerHTML  = `<p style="color:white"; "background-color:black">${this.innerHTML}</p>`;
+    }
+}
+
+customElements.define("x-paragraph", ParagraphElement);

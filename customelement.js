@@ -41,7 +41,7 @@ customElements.define("x-palevioletred", PaleVioletRedElement);
 
 class ParagraphElement extends HTMLElement{
     connectedCallback(){        
-        this.innerHTML  = `<p style="color:white"; "background-color:black">${this.innerHTML}</p>`;
+        this.innerHTML  = `<p style="border: 5px dotted #a26eeb">${this.innerHTML}</p>`;
     }
 }
 
